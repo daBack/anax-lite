@@ -26,8 +26,9 @@ $routes
 $intRoutes
 EOD;
 
-$app->response->setBody($body)
-              ->send(404);
+    // Something wrong with pylint, must ask!
+    $app->response->setBody($body)
+        ->send(404);
 });
 
 $app->router->add("status", function () use ($app) {

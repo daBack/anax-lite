@@ -1,0 +1,30 @@
+.parent {
+    background-color: #1c1405;
+    display: flex;
+    justify-content: center;
+    /*flex-direction: column;*/
+    flex-flow: row wrap;
+}
+.child {
+    flex: 1;
+    flex-basis: 40%;
+    margin: 5%;
+    background-color: rgb(228, 219, 219);
+}
+
+.child h2 {
+    text-align: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.child p {
+    margin: 5px;
+    font-size: 1.1em;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+@media screen and (max-width: 960px) {
+    .child {
+        flex-basis: 80%;
+    }
+}
