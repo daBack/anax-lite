@@ -12,9 +12,13 @@ $navbar = [
     "reports" => [
         "text" => "Reports",
         "route" => $urlReport = $app->url->create("report")
+    ],
+    "session" => [
+        "text" => "Session",
+        "route" => $urlReport = $app->url->create("session")
     ]
 ];
 
 foreach ($navbar as $value) {
-    echo "<a href='" . $value['route'] . "'>" . $value['text'] . "</a>";
+    echo "<a class='navA' href='" . $value['route'] . "'>" . $value['text'] . "</a>";
 }

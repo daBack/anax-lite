@@ -5,4 +5,6 @@
         kul. En av mina nyuppfångade intressen är foto. Om det är så att du ser mig fotandes ute i naturen eller i staden
         är det bara att hojta till så får du en hejdundrans cool, ny visningbild på valfri social media.
     </p>
+    <a href="https://github.com/daBack">Mitt Git konto</a>
+    <a href="status">Status page about the site</a>
 </article>

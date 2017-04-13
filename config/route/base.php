@@ -9,7 +9,7 @@
  */
 $app->router->add("", function () use ($app) {
     $app->view->add("mePage/header", ["title" => "Start"]);
-    $app->view->add("navbar1/nav");
+    $app->view->add("navbar2/navbar");
     $app->view->add("mePage/startPage");
     //  $app->view->add("test1/home");
 
@@ -59,4 +59,18 @@ $app->router->add("report", function () use ($app) {
 
     $app->response->setBody([$app->view, "render"])
                ->send();
+});
+
+
+
+$app->router->add("status", function () use ($app) {
+    $data = [
+        "Server" => php_uname(),
+        "PHP version" => phpversion(),
+        "Included files" => count(get_included_files()),
+        "Memory used" => memory_get_peak_usage(true),
+        "Execution time" => microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'],
+    ];
+
+    $app->response->sendJson($data);
 });

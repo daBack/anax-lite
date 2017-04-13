@@ -9,6 +9,8 @@ return [
     "path" => [
         ANAX_APP_PATH . "/view",
         ANAX_INSTALL_PATH . "/view",
+        ANAX_APP_PATH . "/view/view",
+        ANAX_INSTALL_PATH . "/view/view",
     ],
 
     // File suffix for template files

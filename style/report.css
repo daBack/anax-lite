@@ -1,5 +1,5 @@
 .parent {
-    background-color: #1c1405;
+    background-color: #46789d;
     display: flex;
     justify-content: center;
     /*flex-direction: column;*/
@@ -8,8 +8,9 @@
 .child {
     flex: 1;
     flex-basis: 40%;
-    margin: 5%;
+    margin: 2%;
     background-color: rgb(228, 219, 219);
+    padding: 1em;
 }
 
 .child h2 {
