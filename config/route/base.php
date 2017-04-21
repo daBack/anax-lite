@@ -71,6 +71,5 @@ $app->router->add("status", function () use ($app) {
         "Memory used" => memory_get_peak_usage(true),
         "Execution time" => microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'],
     ];
-
-    $app->response->sendJson($data);
+    // $app->response->sendJson($data);
 });

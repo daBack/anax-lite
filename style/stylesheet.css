@@ -70,15 +70,18 @@ nav {
 .margin {
     margin: 30px;
 }
-/*nav a:hover i {
-    display:block;
-    padding-left: 20px;
+.diceGame {
+    display: flex;
+    flex-direction: column;
 }
-i {
-    color: white;
-    background: transparent;
-    padding: 0 5px;
-    align-self: center;
-    margin: auto;
-    display: none;
-}*/
+.para {
+    font-size: 2em;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    letter-spacing: 0.2em;
+}
+.diceGame input[type=submit]{
+    font-size: 2em;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    letter-spacing: 0.2em;
+    padding: 20px;
+}

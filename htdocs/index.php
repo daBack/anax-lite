@@ -15,15 +15,15 @@ require ANAX_INSTALL_PATH . "/vendor/autoload.php";
 // Add all resources to $app
 $app = new \back\App\App();
 
-$app->navbar = new \back\Navbar\navbar();
+$app->navbar = new \back\Navbar\Navbar();
 $app->navbar->configure("navbar.php");
-
+$app->dice = new \back\Dice\Dice();
 $app->session = new \back\Session\Session();
 $app->request = new \Anax\Request\Request();
 $app->response = new \Anax\Response\Response();
-$app->url     = new \Anax\Url\Url();
-$app->router  = new \Anax\Route\RouterInjectable();
-$app->view     = new \Anax\View\ViewContainer();
+$app->url   = new \Anax\Url\Url();
+$app->router = new \Anax\Route\RouterInjectable();
+$app->view = new \Anax\View\ViewContainer();
 
 $app->session->start();
 // Inject $app into the view container for use in view files.

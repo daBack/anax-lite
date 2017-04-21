@@ -106,6 +106,17 @@ class Session
     {
         var_dump($_SESSION);
     }
+
+
+
+    /**
+    *   @method: adds another class to session.
+    *   @param: The class.
+    */
+    public function sessionAddClass($input)
+    {
+        $_SESSION["dice"] = new $input;
+    }
 }
 // // Use the class
 // Session::start();

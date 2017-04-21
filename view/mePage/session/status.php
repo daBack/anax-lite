@@ -4,7 +4,7 @@
 <?php
 echo "Session ID: " . session_id();
 echo "<br><br>";
-echo "Session GC: " . session_gc();
+echo "Session name: " . session_name();
 echo "<br><br>";
 echo "Cache limiter: " . session_cache_limiter();
 ?>
